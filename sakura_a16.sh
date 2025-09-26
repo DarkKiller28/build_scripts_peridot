@@ -36,3 +36,11 @@ lunch lineage_peridot-bp2a-userdebug
 
 # Build
 mka bacon
+
+# Copy imgs to a separate folder for easy download
+mkdir -p imgs_output
+cp out/target/product/peridot/boot.img imgs_output/
+cp out/target/product/peridot/init_boot.img imgs_output/
+cp out/target/product/peridot/dtbo.img imgs_output/
+cp out/target/product/peridot/recovery.img imgs_output/
+cp out/target/product/peridot/vendor_boot.img imgs_output/
