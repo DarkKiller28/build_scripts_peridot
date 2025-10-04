@@ -9,3 +9,8 @@ crave run --clean --no-patch -- "curl https://raw.githubusercontent.com/DarkKill
 ```
 crave run --clean --no-patch -- "curl https://raw.githubusercontent.com/DarkKiller28/build_scripts_peridot/main/mist_a16.sh | bash"
 ```
+
+• EvolutionX A16
+```
+crave run --clean --no-patch -- "curl https://raw.githubusercontent.com/DarkKiller28/build_scripts_peridot/main/evo_a16.sh | bash"
+```
