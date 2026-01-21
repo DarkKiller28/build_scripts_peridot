@@ -3,19 +3,19 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
+repo init -u https://github.com/Evolution-X/manifest -b bq2 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/DarkKiller28/local_manifest_peridot.git .repo/local_manifests -b evo-16
+git clone https://github.com/DarkKiller28/local_manifest_peridot.git .repo/local_manifests -b evo-bq2
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
 # Build Sync
-/opt/crave/resync.sh 
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 echo "============="
 echo "Sync success"
 echo "============="
@@ -32,7 +32,7 @@ echo "============="
 
 
 # Lunch
-lunch lineage_peridot-bp2a-userdebug
+lunch lineage_peridot-bp4a-userdebug
 
 # Build
 m evolution
