@@ -1,6 +1,6 @@
 # build_scripts_peridot
 
-• crdroid A16
+• AICP 16.2
 ```
 crave run --no-patch -- "curl https://raw.githubusercontent.com/DarkKiller28/build_scripts_peridot/main/aicp_16.2.sh | bash"
 ```
