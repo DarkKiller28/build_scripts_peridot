@@ -30,11 +30,8 @@ echo "======= Export Done ======"
 . build/envsetup.sh
 echo "============="
 
-# Remenber
-make clobber
-
 # Build
-time brunch peridot
+brunch peridot userdebug
 
 # Copy imgs to a separate folder for easy download
 mkdir -p imgs_output
