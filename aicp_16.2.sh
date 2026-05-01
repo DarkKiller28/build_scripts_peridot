@@ -1,6 +1,7 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests/
+repo forall -c 'git lfs install && git lfs pull && git lfs checkout'
 
 # repo init rom
 repo init -u https://github.com/AICP/platform_manifest.git -b w16.2 --git-lfs
