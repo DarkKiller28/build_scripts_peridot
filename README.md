@@ -4,6 +4,11 @@
 ```
 crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_peridot/main/aicp_16.2.sh | bash"
 ```
+• ProjectCiRCLE
+```
+crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_peridot/main/circle_16.2.sh | bash"
+```
+
 • crdroid A16
 ```
 crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_peridot/main/crdroid_a16.sh | bash"
