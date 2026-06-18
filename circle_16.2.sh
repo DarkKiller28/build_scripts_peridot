@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/ProjectCiRCLE-ROM/manifest.git -b lineage-23.2 --git-lfs
+repo init -u https://github.com/ProjectCiRCLE-ROM/manifest.git -b 16.2 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
