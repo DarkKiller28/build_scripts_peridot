@@ -1,5 +1,10 @@
 # build_scripts_peridot
 
+• Aetheria A16
+```
+crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_peridot/main/aetheria_a16.sh | bash"
+```
+
 • AICP 16.2
 ```
 crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_peridot/main/aicp_16.2.sh | bash"
