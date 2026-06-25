@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/DarkKiller28/local_manifest_peridot.git .repo/local_manifests -b lineage-23.2 
+git clone https://github.com/DarkKiller28/local_manifest_peridot.git .repo/local_manifests -b aetheria-16
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -32,10 +32,10 @@ source build/envsetup.sh
 echo "============="
 
 # Lunch
-luncj lineage_peridot-bp4a-userdebug
+lunch aetheria_peridot-bp4a-userdebug
 
 # Build
-mka bacon
+m bacon -j$(nproc)
 
 # Copy imgs to a separate folder for easy download
 mkdir -p imgs_output
