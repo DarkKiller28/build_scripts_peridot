@@ -16,7 +16,7 @@ echo "============================"
 
 
 # Build Sync
-/opt/crave/resync.sh 
+repo sync --no-clone-bundle --no-tags --force-sync -j8
 echo "============="
 echo "Sync success"
 echo "============="
