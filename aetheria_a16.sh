@@ -16,7 +16,7 @@ echo "============================"
 
 
 # Build Sync
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --ignore-hooks
+repo sync --no-clone-bundle --no-tags --force-sync -j8
 echo "============="
 echo "Sync success"
 echo "============="
