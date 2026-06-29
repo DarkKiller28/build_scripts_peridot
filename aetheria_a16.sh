@@ -16,7 +16,7 @@ echo "============================"
 
 
 # Build Sync
-repo sync --no-clone-bundle --no-tags --force-sync -j8 && repo sync -j1 --fail-fast=false vendor/xiaomi/peridot-miuicamera
+/opt/crave/resync.sh 
 echo "============="
 echo "Sync success"
 echo "============="
