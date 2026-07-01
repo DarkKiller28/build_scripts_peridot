@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/DarkKiller28/local_manifest_peridot.git .repo/local_manifests -b aetheria-16
+git clone https://github.com/DarkKiller28/local_manifest_peridot.git .repo/local_manifests -b aetheria-16-test
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
