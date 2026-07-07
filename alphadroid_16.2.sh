@@ -3,13 +3,13 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/alphadroid-project/manifest -b alpha-16.2 --git-lfs --depth=1
+repo init -u https://github.com/Lunaris-AOSP/android -b 16.2 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/DarkKiller28/local_manifest_peridot.git .repo/local_manifests -b alpha-16.2 
+git clone https://github.com/DarkKiller28/local_manifest_peridot.git .repo/local_manifests -b lunaris-16.2 
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -27,11 +27,14 @@ export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
 
 # Set up build environment
-source build/envsetup.sh
+. b*/env*
 echo "============="
 
+# Lunch
+lunch lineage_peridot-bp4a-userdebug
+
 # Build
-brunch peridot
+m bacon
 
 # Copy imgs to a separate folder for easy download
 mkdir -p imgs_output
