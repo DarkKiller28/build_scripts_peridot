@@ -24,6 +24,11 @@ crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/
 crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_peridot/main/crdroid_a16.sh | bash"
 ```
 
+• LunarisAOSP A16
+```
+crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_peridot/main/lunaris_16.2.sh | bash"
+```
+
 • Project Sakura A16
 ```
 crave run --clean --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_peridot/main/sakura_a16.sh | bash"
