@@ -16,7 +16,9 @@ echo "============================"
 
 # Clone crDroid Settings
 rm -rf packages/apps/crDroidSettings
+rm -rf android/vendor/crDroidOTA
 git clone https://github.com/DarkKiller28/android_packages_apps_crDroidSettings.git -b 16.0 packages/apps/crDroidSettings
+git clone https://github.com/DarkKiller28/android_vendor_crDroidOTA.git -b 16.0 android/vendor/crdroidOTA
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
