@@ -33,9 +33,6 @@ echo "============="
 # Lunch
 lunch lineage_peridot-bp4a-userdebug
 
-# Delete old directory (Just once)
-rm -rf out
-
 # Build
 m bacon
 
