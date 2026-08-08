@@ -3,19 +3,19 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/Evolution-X/manifest -b bq2 --git-lfs
+repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs --depth=1
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/DarkKiller28/local_manifest_peridot.git .repo/local_manifests -b evo-bq2
+git clone https://github.com/DarkKiller28/local_manifest_peridot.git .repo/local_manifests -b evo-16
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
 # Build Sync
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+/opt/crave/resync.sh
 echo "============="
 echo "Sync success"
 echo "============="
@@ -30,13 +30,11 @@ echo "======= Export Done ======"
 source build/envsetup.sh
 echo "============="
 
-
 # Lunch
 lunch lineage_peridot-bp4a-userdebug
 
 # Build
 m evolution
-
 
 # Copy imgs to a separate folder for easy download
 mkdir -p imgs_output
