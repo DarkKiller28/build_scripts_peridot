@@ -1,7 +1,7 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests/
-rm -rf android/build/soong 
+rm -rf build/soong 
 
 # repo init rom
 repo init -u https://github.com/RisingOS-Revived/android -b seventeen --git-lfs
@@ -16,7 +16,7 @@ echo "Local manifest clone success"
 echo "============================"
 
 # Clone Soong
-git clone https://github.com/yaap-17-stone/build_soong.git -b seventeen android/build/soong
+git clone https://github.com/yaap-17-stone/build_soong.git -b seventeen build/soong
 
 # Build Sync
 /opt/crave/resync.sh 
