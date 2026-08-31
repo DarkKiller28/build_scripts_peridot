@@ -4,7 +4,7 @@ rm -rf .repo/local_manifests/
 rm -rf build/soong 
 
 # repo init rom
-repo init -u https://github.com/RisingOS-Revived/android -b seventeen --git-lfs
+repo init -u https://github.com/RisingOS-Revived/android -b seventeen --git-lfs --depth=1
 echo "=================="
 echo "Repo init success"
 echo "=================="
