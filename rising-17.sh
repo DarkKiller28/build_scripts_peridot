@@ -16,7 +16,7 @@ echo "Local manifest clone success"
 echo "============================"
 
 # Clone Soong
-git clone https://github.com/yaap-17-stone/build_soong.git -b seventeen
+git clone https://github.com/yaap-17-stone/build_soong.git -b seventeen android/build/soong
 
 # Build Sync
 /opt/crave/resync.sh 
