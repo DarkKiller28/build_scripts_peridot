@@ -14,24 +14,24 @@ echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
-# Clone Soong
-rm -rf build/soong
-git clone https://github.com/yaap-17-stone/build_soong.git -b seventeen build/soong
-
 # Build Sync
-/opt/crave/resync.sh 
+/opt/crave/resync.sh
 echo "============="
 echo "Sync success"
 echo "============="
 
+# Clone Soong
+rm -rf build/soong
+git clone https://github.com/yaap-17-stone/build_soong.git -b seventeen build/soong
+
 # Export
-export BUILD_USERNAME=DarkKiller 
+export BUILD_USERNAME=DarkKiller
 export BUILD_HOSTNAME=crave
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
 
 # Set up build environment
-. b*/env*
+source build/envsetup.sh
 echo "============="
 
 # Lunch
