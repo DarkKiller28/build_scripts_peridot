@@ -34,6 +34,11 @@ crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/
 crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_peridot/main/sakura_a16.sh | bash"
 ```
 
+• Rising 17
+```
+crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_peridot/main/rising-17.sh | bash"
+```
+
 • MistOS A16
 ```
 crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_peridot/main/mist_a16.sh | bash"
