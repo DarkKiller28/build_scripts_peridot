@@ -20,10 +20,6 @@ echo "============="
 echo "Sync success"
 echo "============="
 
-# Clone Soong
-rm -rf build/soong
-git clone https://github.com/yaap-17-stone/build_soong.git -b seventeen build/soong
-
 # Export
 export BUILD_USERNAME=DarkKiller
 export BUILD_HOSTNAME=crave
