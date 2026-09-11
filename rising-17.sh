@@ -22,7 +22,6 @@ echo "============="
 
 # Fetch Build Soong
 cd build/soong && git fetch origin && git reset --hard FETCH_HEAD && cd ../..
- printf '%s\n' 'com\.peridot' 'com\.peridot\..*' >> build/soong/scripts/check_boot_jars/package_allowed_list.txt
 
 # Export
 export BUILD_USERNAME=DarkKiller
