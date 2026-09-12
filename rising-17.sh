@@ -21,7 +21,7 @@ echo "Sync success"
 echo "============="
 
 # Fetch Build Soong
-cd build/soong && git fetch origin && git reset --hard FETCH_HEAD && cd ../..
+cd build/soong && git remote add custom https://github.com/DarkKiller28/android_build_soong.git && git fetch custom && git reset --hard custom/seventeen && cd ../..
 
 # Export
 export BUILD_USERNAME=DarkKiller
@@ -32,9 +32,6 @@ echo "======= Export Done ======"
 # Set up build environment
 source build/envsetup.sh
 echo "============="
-
-# Lunch
-lunch lineage_peridot-cp2a-userdebug
 
 # Start Rising
 riseup peridot userdebug
