@@ -1,6 +1,8 @@
 #!/bin/bash
-
 rm -rf .repo/local_manifests/
+
+# One-time deletion process
+rm -rf prebuilt/gcc
 
 # repo init rom
 repo init -u https://github.com/RisingOS-Revived/android -b seventeen --git-lfs --depth=1
