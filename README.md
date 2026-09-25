@@ -29,6 +29,11 @@ crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/
 crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_peridot/main/infinityx_16.2.sh | bash"
 ```
 
+• InfinityX A17
+```
+crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_peridot/main/infinityx-17.sh | bash"
+```
+
 • LunarisAOSP A16
 ```
 crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_peridot/main/lunaris_16.2.sh | bash"
