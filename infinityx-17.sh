@@ -2,6 +2,9 @@
 
 rm -rf .repo/local_manifests/
 
+# One-time deletion process
+rm -rf prebuilt/gcc
+
 # repo init rom
 repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 17 -g default,-mips,-darwin,-notdefault --depth=1
 echo "=================="
