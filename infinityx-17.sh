@@ -18,13 +18,16 @@ echo "Local manifest clone success"
 echo "============================"
 
 # Build Sync
-repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
+/opt/crave/resync.sh
 echo "============="
 echo "Sync success"
 echo "============="
 
 # Fetch Build Soong
-cd build/soong && git remote add custom https://github.com/DarkKiller28/android_build_soong.git && git fetch custom && git reset --hard custom/seventeen && cd ../..
+cd build/soong && git remote add custom https://github.com/DarkKiller28/android_build_soong.git && git fetch custom && git reset --hard custom/seventeen
+
+# Tiny Command
+cd ../..
 
 # Export
 export BUILD_USERNAME=DarkKiller 
